@@ -1,20 +1,17 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[3]:
-
-
+import pandas as pd
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.naive_bayes import MultinomialNB
+from nltk.stem import PorterStemmer
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
 from tkinter import *
 from tkinter import messagebox
 from tkinter import filedialog
 import string
 import re
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
-from nltk.stem import PorterStemmer
-from sklearn.naive_bayes import MultinomialNB
-from sklearn.feature_extraction.text import CountVectorizer
-import pandas as pd
+import nltk
+nltk.download('stopwords')
+nltk.download('punkt')
 
 def clean_text(msg):
     sp_words=stopwords.words('english')

@@ -201,22 +201,3 @@ def browse2(entry_path):
     entry_path.insert(0,file_path)    
 home_screen()    
 win.mainloop() #to make window visible
-
-
-# In[4]:
-
-
-
-
-
-# In[14]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
